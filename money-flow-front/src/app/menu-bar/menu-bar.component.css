@@ -1,0 +1,29 @@
+.p-menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.menu-logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-notification {
+  position: relative;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.menu-profile {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 0.5em;
+}

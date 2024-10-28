@@ -1,0 +1,22 @@
+<p-menubar>
+  <ng-template pTemplate="start">
+    <div class="menu-logo">Nom du Site</div>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <!-- Notifications -->
+    <div class="menu-notification" (click)="toggleNotifications()">
+      <i class="pi pi-bell"></i>
+      <p-overlayPanel #notificationPanel>
+        <ul>
+          <li *ngFor="let notification of notifications">{{ notification }}</li>
+        </ul>
+      </p-overlayPanel>
+    </div>
+
+    <!-- Profil avec Avatar -->
+    <div class="menu-profile">
+      <img [src]="avatarUrl" alt="Avatar" class="avatar" />
+      <span>{{ userFirstName }} {{ userLastName }}</span>
+    </div>
+  </ng-template>
+</p-menubar>
